@@ -18,9 +18,9 @@ Ruby on Rails is chosen as the server framework for this project. Reasons:<br>
 
 I have choosen angularjs as the client framework because of the following reasons:
 	
-1) Excellent Templating engine
-2) Handles DOM masterfully
-3) Easy data manipulation
+1) Excellent Templating engine<br>
+2) Handles DOM masterfully<br>
+3) Easy data manipulation<br>
 
 **C) What aspects of implementation did you find easy, if any, and why?**
 
@@ -32,16 +32,16 @@ Learning web development languages was a bit of a task in the start. <br>
 
 **E) What components OTHER than your client and server framework did you install,if any, and if so, what is their purpose for your solution?**
 
-1)Google Maps API for displaying maps.<br>
-2) Chartjs for the visualizing the data in bar chart. <br>
+1) Google Maps API for displaying maps.<br>
+2) Chart.js for the visualizing the data in bar chart. <br>
 
 **F) What Ubuntu commands are required to deploy and run your server?**<br>
 
 Uploading Project on Github<br>
-    $ git init<br>
-    $ git add . <br>
-    $ git commit -m "first commit" <br>
-    $ git push -u origin master <br>
+    	$ git init<br>
+    	$ git add . <br>
+    	$ git commit -m "first commit" <br>
+    	$ git push -u origin master <br>
 
 Running Project on Heroku <br>
     $ heroku create cse5335-axg5289<br>
