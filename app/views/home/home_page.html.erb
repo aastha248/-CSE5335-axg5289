@@ -6,8 +6,10 @@
 <script>
   var app = angular.module('my_output', []);
   app.controller('my_script', function ($scope, $http) {
+    angular.element("#output").hide()
     $scope.myFunction = function() {
       $http.get("/api/data").success(function (response) {
+        angular.element("#output").show()
         $scope.data = response;
         var chart_labels = Object.keys(response)
         var chart_data = Object.keys(response).map(function(key){return response[key]})
