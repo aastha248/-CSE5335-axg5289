@@ -11,10 +11,15 @@
         $scope.data = response;
         var chart_labels = Object.keys(response)
         var chart_data = Object.keys(response).map(function(key){return response[key]})
-        chart_labels.splice(0,2)
-        chart_data.splice(0,2)
-        chart_labels.splice(12,1)
-        chart_data.splice(12,1)
+        for(var i =0; i < chart_labels.length; i++)
+        {
+          if((chart_labels[i].includes("oordinates"))||(chart_labels[i].includes("Total")))
+          {
+            chart_labels.splice(i,1)
+            chart_data.splice(i,1)
+            i--;
+          }
+        }
         $("#map").googleMap();
         $("#map").addMarker({
           coords: [response["Latitude Coordinates"], response["Longitude Coordinates"]], // GPS coords
